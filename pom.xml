@@ -83,10 +83,5 @@
 			<version>1.0.1</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>dev.morgoth398</groupId>
-			<artifactId>VolucrisBindings-Generator</artifactId>
-			<version>1.0.0</version>
-		</dependency>
 	</dependencies>
 </project>

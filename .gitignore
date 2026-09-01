@@ -40,5 +40,6 @@ cmake-build-*/
 
 src/main/java/test
 
+/natives/
 */natives/
 **/natives/clang/
