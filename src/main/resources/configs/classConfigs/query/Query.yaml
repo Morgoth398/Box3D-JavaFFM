@@ -1,0 +1,68 @@
+class-description:
+  name: Query
+  package-name: volucris.bindings.box3d.query
+  directory: src/main/java/volucris/bindings/box3d/query
+  is-static: true
+  parent:
+  interfaces: []
+  is-sealed: false
+  permits: []
+  is-abstract: false
+  is-final: true
+  instance-parameter:
+
+imports:
+  - volucris.bindings.box3d.math.Transform
+  - volucris.bindings.box3d.math.AABB
+  - volucris.bindings.box3d.geometry.Capsule
+  - volucris.bindings.box3d.geometry.CompoundData
+  - volucris.bindings.box3d.geometry.HeightFieldData
+  - volucris.bindings.box3d.geometry.HullData
+  - volucris.bindings.box3d.geometry.Mesh
+  - volucris.bindings.box3d.geometry.Sphere
+static-imports:
+
+macro-name-prefixes:
+excluded-macro-name-prefixes:
+macro-names:
+excluded-macro-names:
+
+symbol-prefixes:
+symbols:
+
+function-name-prefixes:
+excluded-function-name-prefixes:
+function-name-postfixes:
+excluded-function-name-postfixes:
+
+constructors:
+struct:
+  
+native-functions:
+  - name: b3IsValidRay
+  - name: b3OverlapCapsule
+  - name: b3OverlapCompound
+  - name: b3OverlapHeightField
+  - name: b3OverlapHull
+  - name: b3OverlapMesh
+  - name: b3OverlapSphere
+  - name: b3RayCastSphere
+  - name: b3RayCastHollowSphere
+  - name: b3RayCastCapsule
+  - name: b3RayCastCompound
+  - name: b3RayCastHull
+  - name: b3RayCastMesh
+  - name: b3RayCastHeightField
+  - name: b3ShapeCastSphere
+  - name: b3ShapeCastCapsule
+  - name: b3ShapeCastCompound
+  - name: b3ShapeCastHull
+  - name: b3ShapeCastMesh
+  - name: b3ShapeCastHeightField
+  - name: b3QueryMesh
+  - name: b3QueryHeightField
+  - name: b3ShapeDistance
+  - name: b3ShapeCast
+  - name: b3GetSweepTransform
+  - name: b3TimeOfImpact
+native-function-pointers:

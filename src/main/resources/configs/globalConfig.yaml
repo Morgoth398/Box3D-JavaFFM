@@ -1,0 +1,26 @@
+naming:
+  strip-prefixes:
+    - b3Recording_
+    - b3RecPlayer_
+    - b3Contact_
+    - b3DebugDraw_
+    - b3World_
+    - b3Shape_
+    - b3Rot_
+    - b3AABB_
+    - b3WeldJoint_
+    - b3RevoluteJoint_
+    - b3PrismaticJoint_
+    - b3FilterJoint_
+    - b3MouseJoint_
+    - b3WheelJoint_
+    - b3DistanceJoint_
+    - b3ParallelJoint_
+    - b3SphericalJoint_
+    - b3Joint_
+    - b3DynamicTree_
+    - b3Body_
+    - b3_
+    - b3_
+    - b3
+  strip-postfixes:

@@ -1,0 +1,38 @@
+class-description:
+  name: CompoundMeshDef
+  package-name: volucris.bindings.box3d.geometry
+  directory: src/main/java/volucris/bindings/box3d/geometry
+  is-static: false
+  parent:
+  interfaces: []
+  is-sealed: false
+  permits: []
+  is-abstract: false
+  is-final: true
+  instance-parameter:
+
+imports:
+  - volucris.bindings.box3d.math.Transform
+  - volucris.bindings.box3d.math.Vec3
+  - volucris.bindings.box3d.shape.SurfaceMaterial
+static-imports:
+
+macro-name-prefixes:
+excluded-macro-name-prefixes:
+macro-names:
+excluded-macro-names:
+
+symbol-prefixes:
+symbols:
+
+function-name-prefixes:
+excluded-function-name-prefixes:
+function-name-postfixes:
+excluded-function-name-postfixes:
+
+constructors:
+struct:
+  name: b3CompoundMeshDef
+
+native-functions:
+native-function-pointers:

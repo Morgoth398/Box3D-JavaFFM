@@ -1,0 +1,164 @@
+callbacks:
+  - name: b3AllocFcn
+    package-name: volucris.bindings.box3d
+    directory: src/main/java/volucris/bindings/box3d
+  - name: b3FreeFcn
+    package-name: volucris.bindings.box3d
+    directory: src/main/java/volucris/bindings/box3d
+  - name: b3AssertFcn
+    package-name: volucris.bindings.box3d
+    directory: src/main/java/volucris/bindings/box3d
+    string-parameters:
+      - condition
+      - fileName
+  - name: b3LogFcn
+    package-name: volucris.bindings.box3d
+    directory: src/main/java/volucris/bindings/box3d
+    string-parameters:
+      - message
+
+  - name: b3TaskCallback
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    string-parameters:
+
+  - name: b3EnqueueTaskCallback
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    string-parameters:
+      - taskName
+
+  - name: b3FinishTaskCallback
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    string-parameters:
+
+  - name: b3FrictionCallback
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    string-parameters:
+
+  - name: b3RestitutionCallback
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    string-parameters:
+
+  - name: b3CustomFilterFcn
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    imports:
+      - volucris.bindings.box3d.shape.ShapeId
+
+  - name: b3PreSolveFcn
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    imports:
+      - volucris.bindings.box3d.shape.ShapeId
+      - volucris.bindings.box3d.math.Vec3
+
+  - name: b3OverlapResultFcn
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    imports:
+      - volucris.bindings.box3d.shape.ShapeId
+
+  - name: b3CastResultFcn
+    package-name: volucris.bindings.box3d.world
+    directory: src/main/java/volucris/bindings/box3d/world
+    imports:
+      - volucris.bindings.box3d.shape.ShapeId
+      - volucris.bindings.box3d.math.Vec3
+
+  - name: b3MeshQueryFcn
+    package-name: volucris.bindings.box3d.query
+    directory: src/main/java/volucris/bindings/box3d/query
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+
+  - name: b3TreeQueryCallbackFcn
+    package-name: volucris.bindings.box3d.dynamicTree
+    directory: src/main/java/volucris/bindings/box3d/dynamicTree
+    string-parameters:
+  - name: b3TreeQueryClosestCallbackFcn
+    package-name: volucris.bindings.box3d.dynamicTree
+    directory: src/main/java/volucris/bindings/box3d/dynamicTree
+    string-parameters:
+  - name: b3TreeBoxCastCallbackFcn
+    package-name: volucris.bindings.box3d.dynamicTree
+    directory: src/main/java/volucris/bindings/box3d/dynamicTree
+    imports:
+      - volucris.bindings.box3d.query.BoxCastInput
+  - name: b3TreeRayCastCallbackFcn
+    package-name: volucris.bindings.box3d.dynamicTree
+    directory: src/main/java/volucris/bindings/box3d/dynamicTree
+    imports: 
+      - volucris.bindings.box3d.query.RayCastInput
+    
+  - name: b3PlaneResultFcn
+    package-name: volucris.bindings.box3d.characterMover
+    directory: src/main/java/volucris/bindings/box3d/characterMover
+    imports:
+      - volucris.bindings.box3d.shape.ShapeId
+  - name: b3MoverFilterFcn
+    package-name: volucris.bindings.box3d.characterMover
+    directory: src/main/java/volucris/bindings/box3d/characterMover
+    imports: 
+      - volucris.bindings.box3d.shape.ShapeId
+
+  - name: b3CompoundQueryFcn
+    package-name: volucris.bindings.box3d.geometry
+    directory: src/main/java/volucris/bindings/box3d/geometry
+
+  - name: b3CreateDebugShapeCallback
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+  - name: b3DestroyDebugShapeCallback
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+
+  - name: b3DebugDraw_DrawShapeFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Transform
+  - name: b3DebugDraw_DrawSegmentFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+  - name: b3DebugDraw_DrawTransformFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Transform
+  - name: b3DebugDraw_DrawPointFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+  - name: b3DebugDraw_DrawSphereFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+  - name: b3DebugDraw_DrawCapsuleFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+  - name: b3DebugDraw_DrawBoundsFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.AABB
+  - name: b3DebugDraw_DrawBoxFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3
+      - volucris.bindings.box3d.math.Transform
+  - name: b3DebugDraw_DrawStringFcn
+    package-name: volucris.bindings.box3d.debugDraw
+    directory: src/main/java/volucris/bindings/box3d/debugDraw
+    imports:
+      - volucris.bindings.box3d.math.Vec3

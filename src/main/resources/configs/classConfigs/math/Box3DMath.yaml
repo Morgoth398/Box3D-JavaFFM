@@ -1,0 +1,144 @@
+class-description:
+  name: Box3DMath
+  package-name: volucris.bindings.box3d.math
+  directory: src/main/java/volucris/bindings/box3d/math
+  is-static: true
+  parent:
+  interfaces: []
+  is-sealed: false
+  permits: []
+  is-abstract: false
+  is-final: true
+  instance-parameter:
+
+imports:
+static-imports:
+
+macro-name-prefixes:
+excluded-macro-name-prefixes:
+macro-names:
+excluded-macro-names:
+
+symbol-prefixes:
+symbols:
+
+function-name-prefixes:
+excluded-function-name-prefixes:
+function-name-postfixes:
+excluded-function-name-postfixes:
+
+constructors:
+struct:
+
+native-functions:
+  # - name: b3MinInt
+  # - name: b3MaxInt
+  # - name: b3ClampInt
+  # - name: b3AbsFloat
+  # - name: b3MinFloat
+  # - name: b3MaxFloat
+  # - name: b3ClampFloat
+  # - name: b3LerpFloat
+  - name: b3Atan2
+  - name: b3ComputeCosSin
+  # - name: b3Sin
+  # - name: b3Cos
+  # - name: b3UnwindAngle
+  # - name: b3Add
+  # - name: b3Sub
+  # - name: b3Mul
+  # - name: b3Neg
+  # - name: b3Dot
+  # - name: b3Length
+  # - name: b3LengthSquared
+  # - name: b3Distance
+  # - name: b3DistanceSquared
+  # - name: b3Normalize
+  # - name: b3GetLengthAndNormalize
+  # - name: b3Perp
+  # - name: b3IsNormalized
+  # - name: b3MulAdd
+  # - name: b3MulSub
+  # - name: b3MulSV
+  # - name: b3Cross
+  # - name: b3Lerp
+  # - name: b3Blend2
+  # - name: b3Abs
+  # - name: b3Sign
+  # - name: b3Min
+  # - name: b3Max
+  # - name: b3Clamp
+  # - name: b3SafeScale
+  # - name: b3IsNormalizedQuat
+  # - name: b3RotateVector
+  # - name: b3InvRotateVector
+  # - name: b3DotQuat
+  # - name: b3MulQuat
+  # - name: b3InvMulQuat
+  # - name: b3Conjugate
+  # - name: b3NegateQuat
+  # - name: b3NormalizeQuat
+  # - name: b3MakeQuatFromAxisAngle
+  # - name: b3GetAxisAngle
+  # - name: b3GetQuatAngle
+  - name: b3MakeQuatFromMatrix
+  - name: b3ComputeQuatBetweenUnitVectors
+  # - name: b3GetTwistAngle
+  # - name: b3GetSwingAngle
+  # - name: b3NLerp
+  # - name: b3MulTransforms
+  # - name: b3InvertTransform
+  # - name: b3TransformPoint
+  # - name: b3InvTransformPoint
+  # - name: b3ToPos
+  # - name: b3ToVec3
+  # - name: b3RoundDownFloat
+  # - name: b3RoundUpFloat
+  # - name: b3SubPos
+  # - name: b3OffsetPos
+  # - name: b3LerpPosition
+  # - name: b3TransformWorldPoint
+  # - name: b3InvTransformWorldPoint
+  # - name: b3InvMulWorldTransforms
+  # - name: b3MulWorldTransforms
+  # - name: b3ToRelativeTransform
+  # - name: b3MakeWorldTransform
+  # - name: b3OffsetAABB
+  # - name: b3Det
+  # - name: b3MulMV
+  # - name: b3NegateMat3
+  # - name: b3AddMM
+  # - name: b3SubMM
+  # - name: b3MulSM
+  # - name: b3MulMM
+  # - name: b3Transpose
+  # - name: b3InvertMatrix
+  # - name: b3Solve3
+  # - name: b3InvertT
+  # - name: b3AbsMatrix3
+  - name: b3Steiner
+  # - name: b3MakeAABB
+  # - name: b3AABB_Contains
+  # - name: b3AABB_Area
+  # - name: b3AABB_Center
+  # - name: b3AABB_Extents
+  # - name: b3AABB_Union
+  # - name: b3AABB_Inflate
+  # - name: b3AABB_Overlaps
+  # - name: b3AABB_Transform
+  # - name: b3ClosestPointToAABB
+  - name: b3PointToSegmentDistance
+  - name: b3LineDistance
+  - name: b3SegmentDistance
+  - name: b3IsValidFloat
+  - name: b3IsValidVec3
+  - name: b3IsValidQuat
+  - name: b3IsValidTransform
+  - name: b3IsValidMatrix3
+  - name: b3IsValidAABB
+  - name: b3IsBoundedAABB
+  - name: b3IsSaneAABB
+  - name: b3IsValidPlane
+  - name: b3IsValidPosition
+  - name: b3IsValidWorldTransform
+native-function-pointers:

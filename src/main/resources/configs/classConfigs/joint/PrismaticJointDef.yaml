@@ -1,0 +1,36 @@
+class-description:
+  name: PrismaticJointDef
+  package-name: volucris.bindings.box3d.joint
+  directory: src/main/java/volucris/bindings/box3d/joint
+  is-static: false
+  parent:
+  interfaces: []
+  is-sealed: false
+  permits: []
+  is-abstract: false
+  is-final: true
+  instance-parameter:
+
+imports:
+static-imports:
+
+macro-name-prefixes:
+excluded-macro-name-prefixes:
+macro-names:
+excluded-macro-names:
+
+symbol-prefixes:
+symbols:
+
+function-name-prefixes:
+excluded-function-name-prefixes:
+function-name-postfixes:
+excluded-function-name-postfixes:
+
+constructors:
+struct:
+  name: b3PrismaticJointDef
+  
+native-functions:
+  - name: b3DefaultPrismaticJointDef
+native-function-pointers:
