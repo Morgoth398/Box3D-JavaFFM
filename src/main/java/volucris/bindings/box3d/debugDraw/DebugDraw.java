@@ -6,7 +6,9 @@ package volucris.bindings.box3d.debugDraw;
 import java.lang.foreign.Arena;
 import java.lang.foreign.MemoryLayout;
 import java.lang.foreign.MemorySegment;
+import java.lang.foreign.SegmentAllocator;
 import java.lang.foreign.StructLayout;
+import java.lang.invoke.MethodHandle;
 import java.lang.invoke.VarHandle;
 import java.util.function.Consumer;
 import org.jspecify.annotations.Nullable;
@@ -24,6 +26,8 @@ import static volucris.bindings.core.FFMUtils.*;
 /// ```
 public final class DebugDraw
 		implements Struct<DebugDraw> {
+
+    private static final LazyConstant<MethodHandle> B3_DEFAULT_DEBUG_DRAW;
 
     public static final StructLayout LAYOUT;
 
@@ -120,6 +124,8 @@ public final class DebugDraw
             UNBOUNDED_ADDRESS.withName("context")
         ).withName("b3DebugDraw").withByteAlignment(8);
         
+        B3_DEFAULT_DEBUG_DRAW = downcallHandle("b3DefaultDebugDraw", DebugDraw.LAYOUT);
+        
         DRAW_SHAPE_FCN_HANDLE = LAYOUT.varHandle(PathElement.groupElement("DrawShapeFcn"));
         DRAW_SEGMENT_FCN_HANDLE = LAYOUT.varHandle(PathElement.groupElement("DrawSegmentFcn"));
         DRAW_TRANSFORM_FCN_HANDLE = LAYOUT.varHandle(PathElement.groupElement("DrawTransformFcn"));
@@ -191,6 +197,36 @@ public final class DebugDraw
         drawingBounds = new AABB(segment.asSlice(DRAWING_BOUNDS_BYTE_OFFSET, AABB.LAYOUT));
     }
 
+    /// ```
+    /// Create a debug draw struct with default values.
+    /// ```
+    public static MemorySegment ndefaultDebugDraw(
+    	SegmentAllocator allocator
+    ) {
+    	MethodHandle method = B3_DEFAULT_DEBUG_DRAW.get();
+    	try {
+    		return (MemorySegment) method.invokeExact(
+    			allocator
+    		);
+    	} catch (Throwable e) {
+    		throw new RuntimeException(e);
+    	}
+    }
+    
+    /// Typed method of [#ndefaultDebugDraw].
+    public static @Nullable DebugDraw defaultDebugDraw(
+    	SegmentAllocator allocator
+    ) {
+    	MemorySegment segment = ndefaultDebugDraw(
+    		allocator
+    	);
+    
+    	if (segment.equals(MemorySegment.NULL))
+    		return null;
+    	
+    	return new DebugDraw(segment);
+    }
+    
     /// @see #drawShapeFcn()
     public DebugDraw drawShapeFcn(DrawShapeFcn drawShapeFcn) {
     	DRAW_SHAPE_FCN_HANDLE.set(segment, 0L, drawShapeFcn.memorySegment());
