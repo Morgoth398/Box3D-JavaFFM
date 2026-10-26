@@ -5,7 +5,7 @@ This project provides Java bindings for  [Box3D](https://github.com/erincatto/bo
 Windows, Linux and Mac are directly supported. All native libraries were build using the [Box3d_Build](./.github/workflows/Box3d_Build.yml) Workflow.
 
 # Building The Project
-1. Download [Java 26](https://adoptium.net/de/temurin/releases?version=26&mode=filter&os=any&arch=any)
+1. Download [Java 26](https://adoptium.net/temurin/releases?version=26&mode=filter&os=any&arch=any)
 2. Download the sources or clone the repo
 
 ### Using The Terminal
